@@ -1,0 +1,63 @@
+# FinCA – Multi-Agent Generative AI for CA Task Automation
+# Requirements File
+# Python 3.10+
+
+# ─── LangChain & LangGraph (Core Agent Framework) ───────────────────────────
+langchain==0.2.16
+langchain-core==0.2.38
+langchain-community==0.2.16
+langchain-openai==0.1.23
+langchain-google-genai==1.0.10
+langgraph==0.2.28
+
+# ─── Vector Databases (RAG) ──────────────────────────────────────────────────
+chromadb==0.5.5
+pinecone-client==4.1.2
+
+# ─── Embeddings ──────────────────────────────────────────────────────────────
+sentence-transformers==3.0.1
+tiktoken==0.7.0
+
+# ─── AI Model APIs ───────────────────────────────────────────────────────────
+openai==1.44.0
+google-generativeai==0.7.2
+anthropic==0.34.2
+
+# ─── FastAPI Backend ─────────────────────────────────────────────────────────
+fastapi==0.114.0
+uvicorn[standard]==0.30.6
+pydantic==2.8.2
+pydantic-settings==2.4.0
+python-multipart==0.0.9
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# ─── Database ────────────────────────────────────────────────────────────────
+sqlalchemy==2.0.32
+psycopg2-binary==2.9.9
+alembic==1.13.2
+
+# ─── ML / Anomaly Detection ──────────────────────────────────────────────────
+xgboost==2.1.1
+scikit-learn==1.5.1
+numpy==1.26.4
+pandas==2.2.2
+
+# ─── Document Processing ─────────────────────────────────────────────────────
+pypdf==4.3.1
+python-docx==1.1.2
+openpyxl==3.1.5
+pdfplumber==0.11.4
+
+# ─── Utilities ───────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+requests==2.32.3
+httpx==0.27.2
+aiofiles==24.1.0
+tenacity==8.5.0
+loguru==0.7.2
+
+# ─── Testing ─────────────────────────────────────────────────────────────────
+pytest==8.3.2
+pytest-asyncio==0.23.8
+httpx==0.27.2

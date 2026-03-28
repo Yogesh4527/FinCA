@@ -1,0 +1,59 @@
+# FinCA – .gitignore
+
+# ─── Environment & Secrets ───────────────────────────────────────────────────
+.env
+.env.local
+.env.production
+*.pem
+*.key
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ─── Vector DB / Data ────────────────────────────────────────────────────────
+data/chroma_db/
+*.db
+*.sqlite
+
+# ─── Jupyter Notebooks ───────────────────────────────────────────────────────
+.ipynb_checkpoints
+*.ipynb
+
+# ─── Node / React ────────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/build/
+frontend/.env
+npm-debug.log*
+
+# ─── IDE ─────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── ML Models ───────────────────────────────────────────────────────────────
+models/*.pkl
+models/*.joblib
+models/*.bin
+
+# ─── Testing ─────────────────────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
